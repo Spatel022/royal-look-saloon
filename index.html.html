@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Look Men Saloon</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:#0d0d0d;
+    color:#fff;
+}
+
+/* HEADER */
+header{
+    text-align:center;
+    padding:30px 20px 10px;
+    background:#000;
+    border-bottom:2px solid gold;
+}
+
+header img{
+    width:200px;   /* LOGO BIGGER */
+    margin-bottom:20px;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:gold;
+}
+
+/* HERO */
+.hero{
+    height:80vh;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1') center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:45px;
+    color:gold;
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 30px;
+    background:gold;
+    color:black;
+    font-weight:bold;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+}
+
+/* SECTION */
+section{
+    padding:80px 10%;
+    text-align:center;
+}
+
+section h2{
+    font-size:32px;
+    color:gold;
+    margin-bottom:40px;
+}
+
+/* SERVICES */
+.services{
+    max-width:600px;
+    margin:auto;
+}
+
+.service-row{
+    display:flex;
+    justify-content:space-between;
+    padding:15px 20px;
+    border-bottom:1px solid gold;
+    font-size:20px;
+}
+
+.service-row span{
+    font-weight:bold;
+    color:gold;
+}
+
+/* COMBO */
+.combo{
+    margin-top:50px;
+    background:linear-gradient(45deg,gold,orange);
+    color:black;
+    padding:35px;
+    border-radius:15px;
+    font-size:22px;
+    font-weight:bold;
+    box-shadow:0 0 25px gold;
+}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.08);
+}
+
+/* CONTACT */
+.contact p{
+    margin:10px 0;
+    font-size:18px;
+}
+
+/* FOOTER */
+footer{
+    background:#000;
+    text-align:center;
+    padding:20px;
+    border-top:1px solid gold;
+    margin-top:40px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .service-row{
+        flex-direction:column;
+        gap:5px;
+        text-align:center;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <img src="https://i.ibb.co/svnV2JZ4/Untitled-design-1-page-0001-removebg-preview.png" alt="Salon Logo">
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="hero">
+    <div>
+        <h1>Royal Look Men Saloon</h1>
+        <p>✂ Professional Grooming | 💈 Modern Style | 💰 Affordable Price</p>
+        <a href="https://wa.me/704169149" class="btn">Book on WhatsApp</a>
+    </div>
+</div>
+
+<section id="services">
+    <h2>Our Services</h2>
+
+    <div class="services">
+        <div class="service-row">✂ Haircut <span>₹50</span></div>
+        <div class="service-row">💈 Beard Trim <span>₹50</span></div>
+        <div class="service-row">🧴 Facial <span>₹300</span></div>
+        <div class="service-row">💆 Hair Spa <span>₹400</span></div>
+    </div>
+
+    <div class="combo">
+        🔥 SPECIAL COMBO OFFER 🔥 <br><br>
+        ✂ Haircut + 💈 Beard Trim = ₹80 Only <br><br>
+        💆 Facial + 🧴 Hair Spa = ₹550 Only
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Gallery</h2>
+
+    <div class="gallery">
+        <img src="https://t4.ftcdn.net/jpg/03/74/32/65/360_F_374326500_IZuSyagnKizUonpTAxmG9xoJA7LLLavU.jpg" alt="Professional Haircut">
+        <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250" alt="Professional Beard Trim">
+        <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70" alt="Salon Interior">
+        <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a" alt="Hair Spa Treatment">
+        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486" alt="Hair Styling">
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033" alt="Modern Barber Shop">
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+
+    <p><strong>Address:</strong> GB Chokdi, Vagra, Bharuch – 392140</p>
+    <p><strong>Mobile:</strong> 704169149 - 7046380275 - 9054477574</p>
+
+    <a href="https://wa.me/704169149" class="btn">Chat on WhatsApp</a>
+</section>
+
+<footer>
+    © 2026 Royal Look Men Saloon | All Rights Reserved
+</footer>
+
+</body>
+</html>
